@@ -5,7 +5,7 @@ $(document).ready ->
   $('#inverter').click ->
     inverter();
 
-  converter = () -> 
+  converter = () ->
     if $('form').attr('action') == '/exchange'
       $.ajax '/exchange',
           type: 'POST'
