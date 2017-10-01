@@ -5,7 +5,7 @@ $(document).ready ->
   $('#inverter').click ->
     inverter();
 
-  converter = () ->
+  converter = () -> 
     if $('form').attr('action') == '/exchange'
       $.ajax '/exchange',
           type: 'POST'
@@ -22,7 +22,7 @@ $(document).ready ->
         return false;
 
   inverter = () ->
-    currency_first = $("#currency").val();
+    currency_first = $("#currency").val(  );
     $("#currency").val($("#currency_destination").val());
     $("#currency_destination").val(currency_first);
     converter();
