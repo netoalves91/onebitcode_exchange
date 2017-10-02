@@ -1,22 +1,33 @@
 .exchange_box{
   .card{
     border: 0;
+    background-color: #e9ebee;
     .card-header{
-      background-color: #878d99;
+      background-color: #3300ff;
       border-radius: 3;
       color: white;
       font-weight: 700;
     }
     .card-block{
-      padding: 26px;
+      padding: 25px;
       .title{
-        color: #878d99;
+        color: #000000;
         font-weight: 700;
+        font-size: 17px;
       }
       .btn-exchange{
         background-color: #5bc0de;
         border-color: #5bc0de;
         border-radius: 0;
+      }
+
+      .inverter-buttom{
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 31px;
+        top: 217px;
       }
     }
   }

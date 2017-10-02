@@ -14,13 +14,13 @@
             <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Quantidade ($10)" step="any" required>
           </div>
         </div>
+        <div>
+           <button type="submit" id="inverter" class="inverter-buttom"><%= image_tag '/invert.png', class: "img-responsive"%></button>
+        </div>
         <div class="destination_currency">
           <div class="form-group">
             <p class="title">Moeda Pretendida</p>
             <%= select_tag "currency_destination", options_for_select(currency_select, "EUR"), class: "form-control", id: "currency_destination"%>
-          </div>
-          <div class="inverter-buttom">
-             <button type="submit" id="inverter" class="btn btn-primary btn-exchange col-md-12">inverter Moedas</button>
           </div>
           <div class="form-group">
             <input type="text" id="result" name="result" class="form-control" placeholder="Resultado" readonly>
